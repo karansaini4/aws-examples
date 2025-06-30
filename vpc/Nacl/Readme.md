@@ -1,4 +1,4 @@
-## Craete NACL
+## Create NACL
 
 ```sh
 aws ec2 create-network-acl --vpc-id vpc-084687a7bc466b414
