@@ -1,0 +1,9 @@
+version = 0.1
+[default.package.parameters]
+s3_bucket = "bucket-for-lambda-512"
+region = "ap-south-1"
+image_repository="514548240829.dkr.ecr.ap-south-1.amazonaws.com/python-container-example:latest"
+[default.deploy.parameters]
+s3_bucket = "bucket-for-lambda-512"
+region = "ap-south-1"
+image_repository="514548240829.dkr.ecr.ap-south-1.amazonaws.com/python-container-example:latest"

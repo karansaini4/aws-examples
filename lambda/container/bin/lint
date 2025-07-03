@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+
+
+root_path=$(realpath .)
+
+
+echo "==CFN Linting..."
+cfn-lint "${root_path}/template.yml"

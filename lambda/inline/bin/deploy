@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -e
+
+#if [ -z "$1" ]; then
+#  echo "No namespace argument is supplied eg. bin/deploy x1"
+#  echo "this is how know that toml file to load eg. config/x1/config.toml"
+#  exit 1
+#fi
+
+root_path=$(realpath .)
+#config_path="$(realpath ..)/config/$1/python.toml"
+
+#if [ ! -f "$config_path" ]; then
+#  echo "$config_path does not exist."
+#  exit 1
+#fi
+
+echo "== SAM deploy..."
+#echo "loading configuartion: $config_path"
+
+sam deploy \
+  --template-file "./.aws-sam/build/template.yaml" \
+  --stack-name "inline-lambda-py" \
+  --capabilities "CAPABILITY_IAM"
+# --config-file "$config_path" \

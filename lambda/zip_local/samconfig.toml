@@ -1,0 +1,4 @@
+version = 0.1
+[default.deploy.parameters]
+s3_bucket = "bucket-for-lambda-512"
+region = "ap-south-1"
